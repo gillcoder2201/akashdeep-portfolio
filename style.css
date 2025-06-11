@@ -1,0 +1,54 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f9f9f9;
+  color: #333;
+}
+header {
+  background: url('A_digital_photograph_serves_as_a_header_for_Akashd.png') no-repeat center center/cover;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.8);
+}
+header h1 {
+  font-size: 2.5rem;
+}
+section {
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px 20px;
+}
+.skills, .projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  flex: 1 1 250px;
+}
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #222;
+  color: white;
+  margin-top: 30px;
+}
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.5rem;
+    padding: 0 10px;
+  }
+}
