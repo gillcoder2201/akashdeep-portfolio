@@ -1,64 +1,54 @@
+/* General Styling */
 body {
   margin: 0;
-  padding: 0;
   font-family: 'Poppins', sans-serif;
   background-color: #f5f5f5;
+  color: #333;
 }
 
+/* Hero Section */
 #hero {
   position: relative;
   background: url('dev-bg.jpg') no-repeat center center/cover;
   height: 100vh;
   color: white;
-}
-
-#hero::before {
-  content: '';
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 1;
-}
-
-#hero .content {
-  position: relative;
-  z-index: 2;
-  text-align: center;
-  padding-top: 120px;
-}
-
-#about {
-  padding: 20px;
-  text-align: center;
-  max-width: 800px;
-  margin: auto;
-}
-
-#skills {
-  background-color: #f5f5f5;
-  padding: 60px 20px;
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
+  text-align: center;
+}
+
+.content {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 30px;
+  border-radius: 10px;
+}
+
+/* About Section */
+#about {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+/* Skills Section */
+#skills {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 20px;
+  padding: 30px 20px;
 }
 
 .skill-card {
-  background-color: white;
-  padding: 20px;
-  border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  width: 150px;
-  text-align: center;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 20px 30px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   font-weight: 500;
-  transition: transform 0.2s ease;
+  font-size: 16px;
 }
 
-.skill-card:hover {
-  transform: scale(1.05);
-}
-
+/* Footer */
 footer {
   background-color: #222;
   color: #ccc;
@@ -68,6 +58,7 @@ footer {
   margin-top: 40px;
 }
 
+/* Responsive */
 @media (max-width: 600px) {
   .skill-card {
     width: 120px;
@@ -76,7 +67,7 @@ footer {
   }
 
   #about {
-    padding: 10px;
+    padding: 20px;
     font-size: 15px;
   }
 
