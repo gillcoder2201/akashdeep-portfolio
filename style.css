@@ -10,14 +10,10 @@ body {
   color: #333;
 }
 header {
+  height: 70vh; /* instead of fixed px */
   background: url('A_digital_photograph_serves_as_a_header_for_Akashd.png') no-repeat center center/cover;
-  height: 300px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  text-shadow: 1px 1px 4px rgba(0,0,0,0.8);
 }
+
 header h1 {
   font-size: 2.5rem;
 }
@@ -52,3 +48,23 @@ footer {
     padding: 0 10px;
   }
 }
+@media (min-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
